@@ -1,0 +1,134 @@
+@charset "utd-8";
+
+/*
+  Adobe Color CC https://color.adobe.com/ja/create/color-contrast-analyzer
+    base color [#A4E5FA]
+*/
+
+/* clearfix */
+.cf { zoom: 1; }
+.cf::before, .cf::after { content: ""; display: table; }
+.cf::after { clear: both; }
+
+/* Common */
+.subtitle {
+  display: block;
+  text-align: center;
+  padding: 3% 0 3% 0;
+  clear: both;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #51707A;
+  background-color: #fff;
+}
+nav {
+  margin: 0;
+  padding: 5% 0 0 0;
+  background-color: #fff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  line-height: 2.0em;
+  border-bottom: 1px solid #fff;
+}
+#contents {
+  width: 80%;
+  margin: 1em auto 1em;
+}
+#contents h1 {
+  font-weight: bold;
+}
+aside {
+  padding: 3% 15%;
+}
+article {
+  padding: 2% 0 0 0;
+}
+article.concept {
+  padding: 0 2% 2% 2%;
+}
+article p {
+  text-indent: 1em;
+}
+section {
+  margin: 0 0 1em 0;
+}
+footer {
+  width: 100%;
+  padding: 2% 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+a:any-link {
+  color: #51707A;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Switch by Media Query */
+@media only screen and (min-width: 481px) {
+  /* tablet 481px - 768px */
+  nav {
+    margin: 0;
+    padding: 2% 0 0 5%;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav ul li {
+    float: left;
+    width: 150px;
+    margin: 0;
+    text-align: center;
+    line-height: 3.0em;
+    border-bottom: none;
+  }
+  aside {
+    padding: 0;
+  }
+  article.portfolio {
+    width: 65%;
+    float: right;
+  }
+  aside.aside_portfolio {
+    width: 30%;
+    float: left;
+  }
+  article.search {
+    width: 65%;
+    float: left;
+  }
+  aside.aside_search {
+    width: 30%;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* PC 769 - */
+  #stage {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  #contents {
+    max-width: 960px;
+  }
+  nav {
+    padding: 2% 0;
+  }
+}
