@@ -5,13 +5,186 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/ground.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Octerv Voicy</title>
   </head>
   <body>
-    <div id="contents"></div>
+    <div id="contents">
+      <div class="header-div">
+        <div class="header-div-2">
+          <div class="builder-columns header-div-3">
+            <div class="builder-column header-column">
+              <div class="header-div-4"><h1>Octerv Voicy</h1></div>
+            </div>
+            <div class="builder-column header-column-2">
+              <div class="header-div-5">
+                <div class="builder-columns header-div-6">
+                  <div class="builder-column header-column-3">
+                    <a href="#features" class="header-a"><p>Feature</p></a>
+                  </div>
+                  <div class="builder-column header-column-4">
+                    <a href="#price" class="header-a"><p>Price</p></a>
+                  </div>
+                  <div class="builder-column header-column-5">
+                    <a href="#support" class="header-a"><p>Support</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <footer id="footer">
-      <small>&copy; 2022 OctervTeam</small>
-    </footer>
+      <div class="image-div" data-el="image-div-1">
+        <img loading="lazy" src="img/banner.png" class="image-image" />
+      </div>
+      <script>
+        (() => {
+          const state = {};
+
+          let context = null;
+          let nodesToDestroy = [];
+          let pendingUpdate = false;
+
+          function destroyAnyNodes() {
+            // destroy current view template refs before rendering again
+            nodesToDestroy.forEach((el) => el.remove());
+            nodesToDestroy = [];
+          }
+
+          // Function to update data bindings and loops
+          // call update() when you mutate state and need the updates to reflect
+          // in the dom
+          function update() {
+            if (pendingUpdate === true) {
+              return;
+            }
+            pendingUpdate = true;
+
+            document
+              .querySelectorAll("[data-el='image-div-1']")
+              .forEach((el) => {
+                el.setAttribute("lockAspectRatio", false);
+              });
+
+            destroyAnyNodes();
+
+            pendingUpdate = false;
+          }
+
+          // Update with initial state on first load
+          update();
+        })();
+      </script>
+
+      <div class="section-1-div">
+        <div class="section-1-div-2">
+          <p>
+            今までにないクオリティで楽曲からドラム、ベース、ボーカル、その他の楽器（ギター、ピアノ等）をAIによって分離出来るアプリケーションです。ボーカルキャンセルでカラオケの練習や、ドラムキャンセルでドラムの練習、今まで耳コピが難しかった部分が聞き取りやすくなり練習にもっと集中など、使い方は無限大。
+          </p>
+        </div>
+        <div class="section-1-div-3">
+          <p>
+            ※他者の楽曲には権利があるため、ご自身で権利を保有していないもしくは権利を許諾されていない場合は、分離後の音源をWebに公開することは権利違反となりますのでご注意下さい。
+          </p>
+        </div>
+      </div>
+
+      <div class="section-2-div">
+        <div id="features" class="section-2-div-2"><h2>Features</h2></div>
+        <div class="section-2-div-3">
+          <ul>
+            <li>楽曲からドラム、ベース、ボーカル、その他に分離します</li>
+            <li>通常のプレイヤーのように再生・停止・再生位置移動が出来ます</li>
+            <li>分離した単位でボリューム調整が出来ます</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="applink-div">
+        <div class="applink-div-2">
+          <div class="builder-columns applink-div-3">
+            <div class="builder-column applink-column">
+              <a
+                href="https://apple.co/3MKC6Fy"
+                underline="none"
+                target="_blank"
+              >
+                <img
+                  class="applink-image-1"
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1665360000&h=87d711018a9b4c4324f6b4d0f036790f"
+                  alt="Octerv Voicy"
+                />
+              </a>
+            </div>
+            <div class="builder-column applink-column-2">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.octerv.voiv&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                underline="none"
+                target="_blank"
+              >
+                <img
+                  class="applink-image-2"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  alt="Octerv Voicy"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style></style>
+
+      <div class="movie-1-div">
+        <iframe
+          class="movie-1-frame"
+          src="https://www.youtube.com/embed/jMg1tIIdt1o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="section-3-div">
+        <div id="price" class="section-3-div-2"><h2>Price</h2></div>
+        <div class="section-3-div-3">
+          <ul>
+            <li>
+              無料で3曲分のチケットがあります（サーバーへの負荷のため上限があり申し訳ありません）
+            </li>
+            <li>160円 / 1チケット（アプリ内課金）</li>
+            <li>480円 / 3チケット（アプリ内課金）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-4-div">
+        <div id="support" class="section-4-div-2"><h2>Support</h2></div>
+        <div class="section-4-div-3">
+          <p>以下からご意見や問題点などを投稿お願い致します。</p>
+        </div>
+        <a
+          href="https://forms.gle/BoRZYSnWmhvYYSqX9"
+          target="_blank"
+          class="section-4-a"
+        >
+          <p>投稿フォーム</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-div">
+      <a
+        href="https://www.octerv.com/privacy-policy"
+        target="_blank"
+        class="footer-a"
+      >
+        <p>Privacy Policy</p>
+      </a>
+      <div class="footer-div-2">
+        <p><span style="font-size: 14px">@2022 Octerv-Team</span></p>
+      </div>
+    </div>
   </body>
 </html>

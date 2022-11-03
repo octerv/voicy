@@ -6,9 +6,17 @@
 */
 
 /* clearfix */
-.cf { zoom: 1; }
-.cf::before, .cf::after { content: ""; display: table; }
-.cf::after { clear: both; }
+.cf {
+  zoom: 1;
+}
+.cf::before,
+.cf::after {
+  content: "";
+  display: table;
+}
+.cf::after {
+  clear: both;
+}
 
 /* Common */
 .subtitle {
@@ -23,7 +31,7 @@ body {
   padding: 0;
   font-size: 0.9em;
   line-height: 1.5em;
-  color: #51707A;
+  color: #51707a;
   background-color: #fff;
 }
 nav {
@@ -40,7 +48,7 @@ nav ul li {
   width: 100%;
   margin: 0;
   text-align: center;
-  line-height: 2.0em;
+  line-height: 2em;
   border-bottom: 1px solid #fff;
 }
 #contents {
@@ -72,7 +80,7 @@ footer {
   border-top: 1px solid #ccc;
 }
 a:any-link {
-  color: #51707A;
+  color: #51707a;
   text-decoration: none;
 }
 a:hover {
@@ -95,7 +103,7 @@ a:hover {
     width: 150px;
     margin: 0;
     text-align: center;
-    line-height: 3.0em;
+    line-height: 3em;
     border-bottom: none;
   }
   aside {
