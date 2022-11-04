@@ -444,4 +444,8 @@
   .header-div-5 {
     display: none;
   }
+  .movie-1-div {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+  }
 }

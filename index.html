@@ -38,25 +38,30 @@
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@octerv_official" />
+    <meta name="keywords" content="Music, Source, Separation, AI, Demucs" />
+    <meta
+      name="description"
+      content="State of the art music instruments separator of AI. 今までにないクオリティで楽曲からドラム、ベース、ボーカル、その他の楽器（ギター、ピアノ等）をAIによって分離出来るアプリケーションです。"
+    />
   </head>
   <body>
     <div id="contents">
       <div class="header-div">
         <div class="header-div-2">
-          <div class="builder-columns header-div-3">
-            <div class="builder-column header-column">
+          <div class="header-div-3">
+            <div class="header-column">
               <div class="header-div-4"><h1>Octerv Voicy</h1></div>
             </div>
-            <div class="builder-column header-column-2">
+            <div class="header-column-2">
               <div class="header-div-5">
-                <div class="builder-columns header-div-6">
-                  <div class="builder-column header-column-3">
+                <div class="header-div-6">
+                  <div class="header-column-3">
                     <a href="#features" class="header-a"><p>Feature</p></a>
                   </div>
-                  <div class="builder-column header-column-4">
+                  <div class="header-column-4">
                     <a href="#price" class="header-a"><p>Price</p></a>
                   </div>
-                  <div class="builder-column header-column-5">
+                  <div class="header-column-5">
                     <a href="#support" class="header-a"><p>Support</p></a>
                   </div>
                 </div>
@@ -69,44 +74,6 @@
       <div class="image-div" data-el="image-div-1">
         <img loading="lazy" src="img/banner.png" class="image-image" />
       </div>
-      <script>
-        (() => {
-          const state = {};
-
-          let context = null;
-          let nodesToDestroy = [];
-          let pendingUpdate = false;
-
-          function destroyAnyNodes() {
-            // destroy current view template refs before rendering again
-            nodesToDestroy.forEach((el) => el.remove());
-            nodesToDestroy = [];
-          }
-
-          // Function to update data bindings and loops
-          // call update() when you mutate state and need the updates to reflect
-          // in the dom
-          function update() {
-            if (pendingUpdate === true) {
-              return;
-            }
-            pendingUpdate = true;
-
-            document
-              .querySelectorAll("[data-el='image-div-1']")
-              .forEach((el) => {
-                el.setAttribute("lockAspectRatio", false);
-              });
-
-            destroyAnyNodes();
-
-            pendingUpdate = false;
-          }
-
-          // Update with initial state on first load
-          update();
-        })();
-      </script>
 
       <div class="section-1-div">
         <div class="section-1-div-2">
@@ -157,8 +124,8 @@
 
       <div class="applink-div">
         <div class="applink-div-2">
-          <div class="builder-columns applink-div-3">
-            <div class="builder-column applink-column">
+          <div class="applink-div-3">
+            <div class="applink-column">
               <a
                 href="https://apple.co/3MKC6Fy"
                 underline="none"
@@ -171,7 +138,7 @@
                 />
               </a>
             </div>
-            <div class="builder-column applink-column-2">
+            <div class="applink-column-2">
               <a
                 href="https://play.google.com/store/apps/details?id=com.octerv.voiv&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                 underline="none"
@@ -258,6 +225,10 @@
       </a>
       <div class="footer-div-2">
         <p><span style="font-size: 14px">@2022 Octerv-Team</span></p>
+        <p>
+          Released under the MIT license<br />
+          https://opensource.org/licenses/mit-license.php
+        </p>
       </div>
     </div>
   </body>
