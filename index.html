@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"
+  >
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W4YEC2Q4XX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-W4YEC2Q4XX");
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/ground.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.ico" />
     <title>Octerv Voicy</title>
+    <meta property="og:url" content="https://voicy.octerv.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Octerv Voicy" />
+    <meta
+      property="og:description"
+      content="This is a music instruments separator of AI."
+    />
+    <meta property="og:site_name" content="Octerv" />
+    <meta
+      property="og:image"
+      content="https://octerv-assets.s3.amazonaws.com/images/voicy-ogp.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@octerv_official" />
   </head>
   <body>
     <div id="contents">
